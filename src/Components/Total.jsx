@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Total({exercise1, exercise2, exercise3}) {
+function Total(parts) {
+  console.log(parts)
   return (
     <div>
-      <h3>Number of exercises {exercise1 + exercise2 + exercise3} </h3> 
+      <h3>Number of exercises {parts[0].exercises + parts[1].exercises + parts[2].exercises} </h3> 
     </div>
   )
 }

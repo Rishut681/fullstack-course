@@ -1,17 +1,16 @@
 import React from 'react'
 
-function Content({p1,e1,p2,e2,p3,e3}) {
+function Content(parts) {
+  console.log(parts)
   return (
     <div>
-      <h4>
-        {p1} {e1}
-      </h4>
-      <h4>
-        {p2} {e2}
-      </h4>
-      <h4>
-        {p3} {e3}
-      </h4>
+      <p>name:{parts[0].name}</p>
+      <p>exercise:{parts[0].exercises}</p>
+      <p>name:{parts[1].name}</p>
+      <p>exercise:{parts[1].exercises}</p>
+      <p>name:{parts[2].name}</p>
+      <p>exercise:{parts[2].exercises}</p>
+
     </div>
   )
 }
